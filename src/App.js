@@ -5,6 +5,8 @@ import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
 
+import 'remixicon/fonts/remixicon.css';
+
 function App() {
   return (
     <Router>
