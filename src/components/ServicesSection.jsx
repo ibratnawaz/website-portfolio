@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
 
-import { LayoutStyle, DescriptionStyle, ImageStyle } from '../styles';
+import { LayoutStyle, DescriptionStyle, ImageStyle } from '../utils/styles';
 
 const ServicesSection = () => {
+  const [element, view] = useInView({ threshold: 0.5 });
+  console.log(view);
+
   return (
-    <CustomizeLayoutStyle>
+    <CustomizeLayoutStyle ref={element}>
       <DescriptionStyle>
         <h2>
           High <span>quality</span> services

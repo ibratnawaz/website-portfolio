@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 import Wave from './Wave';
 
-import { titleAnimation, fade, photoAnimation } from '../animation';
+import { titleAnimation, fade, photoAnimation } from '../utils/animation';
 
 import {
   LayoutStyle,
   DescriptionStyle,
   ImageStyle,
   HideStyle,
-} from '../styles';
+} from '../utils/styles';
 
 const AboutSection = () => {
   return (

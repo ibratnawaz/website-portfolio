@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { pageAnimation, slider, sliderContainer } from '../animation';
+import { pageAnimation, slider, sliderContainer } from '../utils/animation';
 
 const MyWork = () => {
   return (
