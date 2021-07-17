@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useInView } from 'react-intersection-observer';
-import { useAnimation } from 'framer-motion';
+
+import { useScroll } from '../utils/useScroll';
 
 import { LayoutStyle, DescriptionStyle, ImageStyle } from '../utils/styles';
 
 const ServicesSection = () => {
-  const [element, view] = useInView({ threshold: 0.5 });
-  console.log(view);
+  const [element, controls] = useScroll();
 
   return (
     <CustomizeLayoutStyle ref={element}>
