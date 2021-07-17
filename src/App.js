@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
@@ -10,16 +11,20 @@ import GlobalStyle from './components/GlobalStyle';
 import 'remixicon/fonts/remixicon.css';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <Router>
+    <div>
       <GlobalStyle />
       <Navbar />
-      <Switch>
-        <Route exact path='/' component={AboutMe} />
-        <Route exact path='/work' component={MyWork} />
-        <Route exact path='/contact' component={ContactMe} />
-      </Switch>
-    </Router>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path='/' component={AboutMe} />
+          <Route exact path='/work' component={MyWork} />
+          <Route exact path='/contact' component={ContactMe} />
+        </Switch>
+      </AnimatePresence>
+    </div>
   );
 }
 
