@@ -25,10 +25,13 @@ button{
     background: transparent;
     color: white;
     font-family: 'Inter', sans-serif;
-    transition: all 0.5s ease;
+    background: linear-gradient(to left, #000 50%, #F9004D 50%) right;
+    background-size: 200%;
+    transition: all .5s ease-out;
     &:hover{
         background-color: #F9004D;
         color: white;
+        background-position: left;
     }
 }
 

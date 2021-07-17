@@ -11,6 +11,7 @@ export const LayoutStyle = styled.div`
 
 export const DescriptionStyle = styled.div`
   flex: 1;
+  z-index: 2;
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
@@ -19,6 +20,7 @@ export const DescriptionStyle = styled.div`
 
 export const ImageStyle = styled.div`
   flex: 1;
+  z-index: 2;
   overflow: hidden;
   img {
     width: 100%;
