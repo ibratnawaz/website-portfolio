@@ -3,13 +3,19 @@ import styled from 'styled-components';
 
 import { useScroll } from '../utils/useScroll';
 
+import { scrollReveal } from '../utils/animation';
+
 import { LayoutStyle, DescriptionStyle, ImageStyle } from '../utils/styles';
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
 
   return (
-    <CustomizeLayoutStyle ref={element}>
+    <CustomizeLayoutStyle
+      variants={scrollReveal}
+      animate={controls}
+      initial='hidden'
+      ref={element}>
       <DescriptionStyle>
         <h2>
           High <span>quality</span> services

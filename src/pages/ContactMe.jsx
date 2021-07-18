@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
+import ScrollTop from '../components/ScrollTop';
+
 import { pageAnimation } from '../utils/animation';
 
 const ContactMe = () => {
@@ -92,6 +94,7 @@ const ContactMe = () => {
           </div>
         </div>
       </ContactStyle>
+      <ScrollTop />
     </motion.div>
   );
 };

@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
+import ScrollTop from '../components/ScrollTop';
+
 import { pageAnimation, slider, sliderContainer } from '../utils/animation';
 
 const MyWork = () => {
@@ -18,6 +20,7 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       MyWork
+      <ScrollTop />
     </motion.div>
   );
 };

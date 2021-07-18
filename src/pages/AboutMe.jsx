@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
+import ScrollTop from '../components/ScrollTop';
 
 import { pageAnimation } from '../utils/animation';
 
@@ -15,6 +16,7 @@ const AboutMe = () => {
       exit='exit'>
       <AboutSection />
       <ServicesSection />
+      <ScrollTop />
     </motion.div>
   );
 };

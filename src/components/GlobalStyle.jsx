@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
     i{
         color: #F9004D;
         font-size: 2.5rem;
