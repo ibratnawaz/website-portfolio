@@ -266,31 +266,11 @@ const ContactStyle = styled.div`
     transition: all 0.5s ease-in-out;
   }
 
-  .social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all 0.2s ease-in-out;
-  }
-
   .social-media-list li:hover {
     background-color: #f9004d;
     i {
       color: #fff;
     }
-  }
-
-  .social-media-list li:hover:after {
-    opacity: 1;
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
   }
 
   .copyright {
