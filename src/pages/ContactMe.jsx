@@ -15,50 +15,48 @@ const ContactMe = () => {
       exit='exit'>
       <ContactStyle>
         <h1>Contact Me</h1>
-        <div class='contact-wrapper'>
+        <div className='contact-wrapper'>
           <form>
             <input
               type='text'
-              class='form-control'
+              className='form-control'
               id='name'
               placeholder='NAME'
               name='name'
-              value=''
               required
             />
 
             <input
               type='email'
-              class='form-control'
+              className='form-control'
               id='email'
               placeholder='EMAIL'
               name='email'
-              value=''
               required
             />
 
             <textarea
-              class='form-control'
+              className='form-control'
               rows='10'
               placeholder='MESSAGE'
               name='message'
               required></textarea>
 
-            <button id='submit' type='submit' value='SEND'>
-              <i class='ri-send-plane-fill'></i> &nbsp;SEND
+            <button id='submit' type='submit'>
+              <i className='ri-send-plane-fill'></i> &nbsp;SEND
             </button>
           </form>
-          <div class='direct-contact-container'>
-            <ul class='contact-list'>
-              <li class='list-item'>
-                <i class='ri-map-pin-2-fill'>
-                  <span class='contact-text'>City, State</span>
+          <div className='direct-contact-container'>
+            <ul className='contact-list'>
+              <li className='list-item'>
+                <i className='ri-map-pin-2-fill'>
+                  <span className='contact-text'>City, State</span>
                 </i>
               </li>
 
-              <li class='list-item'>
-                <i class='ri-phone-fill'>
-                  <span class='contact-text'>
+              <li className='list-item'>
+                <i className='ri-phone-fill'>
+                  <span className='contact-text'>
                     <a href='tel:1-212-555-5555' title='Give me a call'>
                       (212) 555-2368
                     </a>
@@ -66,31 +64,41 @@ const ContactMe = () => {
                 </i>
               </li>
 
-              <li class='list-item'>
-                <i class='ri-mail-fill'>
-                  <span class='contact-text'>
-                    <a href='mailto:#' title='Send me an email'>
-                      hitmeup@gmail.com
+              <li className='list-item'>
+                <i className='ri-mail-fill'>
+                  <span className='contact-text'>
+                    <a
+                      href='mailto:nawazmd0096@gmail.com'
+                      title='Send me an email'>
+                      nawazmd0096@gmail.com
                     </a>
                   </span>
                 </i>
               </li>
             </ul>
             <hr />
-            <ul class='social-media-list'>
+            <ul className='social-media-list'>
               <li>
-                <a href='#' target='_blank' class='contact-icon'>
-                  <i class='ri-github-fill'></i>
+                <a
+                  href='https://github.com/ibratnawaz'
+                  target='_blank'
+                  className='contact-icon'
+                  rel='noreferrer'>
+                  <i className='ri-github-fill'></i>
                 </a>
               </li>
               <li>
-                <a href='#' target='_blank' class='contact-icon'>
-                  <i class='ri-linkedin-box-fill'></i>
+                <a
+                  href='https://www.linkedin.com/in/ibrat-nawaz-08b677183/'
+                  target='_blank'
+                  className='contact-icon'
+                  rel='noreferrer'>
+                  <i className='ri-linkedin-box-fill'></i>
                 </a>
               </li>
             </ul>
             <hr />
-            <div class='copyright'>&copy; ALL OF THE RIGHTS RESERVED</div>
+            <div className='copyright'>&copy; ALL OF THE RIGHTS RESERVED</div>
           </div>
         </div>
       </ContactStyle>
@@ -107,7 +115,8 @@ const ContactStyle = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 64px;
-
+  overflow-y: hidden;
+  overflow-x: hidden;
   h1 {
     text-align: center;
     padding: 40px 0;
@@ -122,6 +131,11 @@ const ContactStyle = styled.div`
   .contact-wrapper {
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   form {
@@ -131,6 +145,16 @@ const ContactStyle = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: 64px;
+    @media screen and (max-width: 850px) {
+      width: 80vw;
+      margin: 0px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 500px;
+      margin-right: auto;
+      padding-right: 24px;
+    }
+
     button {
       margin-top: 24px;
       padding: 0.5rem !important;
@@ -169,6 +193,20 @@ const ContactStyle = styled.div`
   .direct-contact-container {
     margin-left: 64px;
     width: 400px;
+    @media screen and (max-width: 850px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 24px;
+      margin-left: 24%;
+    }
+    @media screen and (max-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 24px;
+      margin-left: 32%;
+    }
   }
 
   .contact-list {
@@ -257,7 +295,7 @@ const ContactStyle = styled.div`
 
   .copyright {
     font: 200 14px sans-serif;
-    color: #555;
+    color: #fff;
     letter-spacing: 1px;
     text-align: left;
     margin-top: 24px;
@@ -267,77 +305,13 @@ const ContactStyle = styled.div`
     border-color: rgba(255, 255, 255, 0.6);
     width: 70%;
     margin: 12px 0px;
-  }
-
-  /* Begin Media Queries*/
-  /* @media screen and (max-width: 850px) {
-    .contact-wrapper {
-      display: flex;
-      flex-direction: column;
+    @media screen and (max-width: 850px) {
+      width: 80%;
     }
-    .direct-contact-container,
-    .form-horizontal {
-      margin: 0 auto;
-    }
-
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 300px;
-    }
-    .social-media-list li {
-      height: 60px;
-      width: 60px;
-      line-height: 60px;
-    }
-    .social-media-list li:after {
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
+    @media screen and (max-width: 320px) {
+      width: 70%;
     }
   }
-
-  @media screen and (max-width: 569px) {
-    .direct-contact-container,
-    .form-wrapper {
-      float: none;
-      margin: 0 auto;
-    }
-    .form-control,
-    textarea {
-      margin: 0 auto;
-    }
-
-    .name,
-    .email,
-    textarea {
-      width: 280px;
-    }
-
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 280px;
-    }
-    .social-media-list {
-      left: 0;
-    }
-    .social-media-list li {
-      height: 55px;
-      width: 55px;
-      line-height: 55px;
-      font-size: 2rem;
-    }
-    .social-media-list li:after {
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-    }
-  }
-
-  @media screen and (max-width: 410px) {
-    .send-button {
-      width: 99%;
-    }
-  } */
 `;
 
 export default ContactMe;

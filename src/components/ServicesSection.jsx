@@ -23,28 +23,28 @@ const ServicesSection = () => {
         <CardsStyle>
           <CardStyle>
             <div className='icon'>
-              <i class='ri-time-line'></i>
+              <i className='ri-time-line'></i>
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </CardStyle>
           <CardStyle>
             <div className='icon'>
-              <i class='ri-group-line'></i>
+              <i className='ri-group-line'></i>
               <h3>Teamwork</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </CardStyle>
           <CardStyle>
             <div className='icon'>
-              <i class='ri-camera-lens-line'></i>
+              <i className='ri-camera-lens-line'></i>
               <h3>Diaphragm</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </CardStyle>
           <CardStyle>
             <div className='icon'>
-              <i class='ri-money-dollar-circle-line'></i>
+              <i className='ri-money-dollar-circle-line'></i>
               <h3>Affordable</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
@@ -74,6 +74,9 @@ const CustomizeLayoutStyle = styled(LayoutStyle)`
 const CardsStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 
 const CardStyle = styled.div`
