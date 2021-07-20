@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
@@ -7,6 +7,20 @@ import ScrollTop from '../components/ScrollTop';
 import { pageAnimation } from '../utils/animation';
 
 const ContactMe = () => {
+  const [name, setName] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const emailHandler = (e) => {
+    e.preventDefault();
+    window.open(
+      `mailto:test.mailer.0080@gmail?subject=${subject}&body=${name}: ${message}`
+    );
+    setName('');
+    setSubject('');
+    setMessage('');
+  };
+
   return (
     <motion.div
       variants={pageAnimation}
@@ -16,22 +30,22 @@ const ContactMe = () => {
       <ContactStyle>
         <h1>Contact Me</h1>
         <div className='contact-wrapper'>
-          <form>
+          <form onSubmit={emailHandler}>
             <input
               type='text'
               className='form-control'
-              id='name'
+              value={name}
               placeholder='NAME'
-              name='name'
+              onChange={(e) => setName(e.target.value)}
               required
             />
 
             <input
-              type='email'
+              type='text'
               className='form-control'
-              id='email'
-              placeholder='EMAIL'
-              name='email'
+              value={subject}
+              placeholder='SUBJECT'
+              onChange={(e) => setSubject(e.target.value)}
               required
             />
 
@@ -39,7 +53,8 @@ const ContactMe = () => {
               className='form-control'
               rows='10'
               placeholder='MESSAGE'
-              name='message'
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
               required></textarea>
 
             <button id='submit' type='submit'>
@@ -50,15 +65,19 @@ const ContactMe = () => {
             <ul className='contact-list'>
               <li className='list-item'>
                 <i className='ri-map-pin-2-fill'>
-                  <span className='contact-text'>City, State</span>
+                  <span className='contact-text'>Gorakhpur, Uttar Pradesh</span>
                 </i>
               </li>
 
               <li className='list-item'>
                 <i className='ri-phone-fill'>
                   <span className='contact-text'>
-                    <a href='tel:1-212-555-5555' title='Give me a call'>
-                      (212) 555-2368
+                    <a
+                      href='https://wa.me/917090926032'
+                      target='_blank'
+                      rel='noreferrer'
+                      title='Give me a call'>
+                      (+91) 7090 926 032
                     </a>
                   </span>
                 </i>
@@ -69,6 +88,8 @@ const ContactMe = () => {
                   <span className='contact-text'>
                     <a
                       href='mailto:nawazmd0096@gmail.com'
+                      target='_blank'
+                      rel='noreferrer'
                       title='Send me an email'>
                       nawazmd0096@gmail.com
                     </a>

@@ -19,7 +19,7 @@ const Card = ({ project }) => {
   return (
     <CardStyle>
       <img src={`images/${project.image}`} alt={`no-${project.image}-found`} />
-      <div class='project-details'>
+      <div className='project-details'>
         <h1>{project.title}</h1>
         <p>{project.desc}</p>
         <div className='app-links'>
@@ -39,6 +39,7 @@ const WorkContainerStyle = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: #0e0e0e;
   @media (max-width: 420px) {
     margin: 0px 8px;
     overflow: hidden;
@@ -49,7 +50,7 @@ const CardStyle = styled.div`
   width: 400px;
   height: 300px;
   margin: 12px;
-  background: #ccc;
+  background-image: #000;
   position: relative;
   @media (max-width: 420px) {
     width: 100vw;
@@ -96,6 +97,15 @@ const CardStyle = styled.div`
           transition: all 0.5 ease-in-out;
           color: white;
         }
+      }
+    }
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+        margin: 0px 12px;
       }
     }
   }

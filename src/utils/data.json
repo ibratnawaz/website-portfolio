@@ -16,17 +16,17 @@
         "zip": "273001"
       },
       "website": "",
-      "resumeDownload": "https://drive.google.com/file/d/18Lb7hMMXcUAGenqcZWlZHFeA5oUqGzDg/view?usp=sharing",
+      "resumeDownload": "https://drive.google.com/file/d/1bf7c2WssF8qUkVb3CzN6WhD50qGWL1cV/view?usp=sharing",
       "social": [
         {
           "name": "linkedin",
           "url": "https://www.linkedin.com/in/ibrat-nawaz-08b677183",
-          "className": "fa fa-linkedin"
+          "className": "ri-linkedin-line"
         },
         {
           "name": "github",
           "url": "https://github.com/ibratnawaz",
-          "className": "fa fa-github"
+          "className": "ri-github-line"
         }
       ]
     },
@@ -36,41 +36,61 @@
         {
           "school": "Nagarjuna College of Engineering and Technology",
           "degree": "Bachelor in Computer Science Engineering",
-          "graduated": "July 2020",
+          "graduated": "Sept 2020",
           "description": "Graduated with Distinction - CGPA 8.65/10"
         }
       ],
       "works": [
         {
+          "company": "BigBinary Solutions Private Limited",
+          "title": "Software Engineer",
+          "years": "April 2021 - July 2021",
+          "description": "Worked as a full-stack developer with react js as the frontend technology and ruby on rails as the main backend technology."
+        },
+        {
           "company": "Trikara Technologies Private Limited",
-          "title": "Full Stack PHP Developer",
+          "title": "Software Engineer",
           "years": "Jun 2020 - Sep 2020",
-          "description": "Building web applications solo."
+          "description": "Worked as a full-stack developer with PHP Laravel as the main technology.Gave all my time from making wire-frames till testing and production development."
+        },
+        {
+          "company": "Trikara Technologies Private Limited",
+          "title": "Junior Software Engineer Trainee",
+          "years": "Jun 2019 - Aug 2019",
+          "description": "My first step towards software engineer, started as an intern in Trikara Technologies. During the period of internship I learnt about Laravel and also contributed to the company product."
         }
       ],
       "skills": [
         {
           "name": "HTML/CSS",
-          "level": "80%"
+          "level": "90%"
         },
         {
           "name": "Javascript",
-          "level": "80%"
+          "level": "90%"
         },
         {
           "name": "Bootstrap",
-          "level": "80%"
+          "level": "90%"
         },
         {
           "name": "REACT",
-          "level": "70%"
-        },
-        {
-          "name": "Node/Express",
           "level": "80%"
         },
         {
+          "name": "Node/Express",
+          "level": "70%"
+        },
+        {
+          "name": "Ruby on Rails",
+          "level": "60%"
+        },
+        {
           "name": "MongoDB",
+          "level": "70%"
+        },
+        {
+          "name": "MySQL",
           "level": "70%"
         }
       ]

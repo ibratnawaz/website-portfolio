@@ -38,6 +38,7 @@ export const ImageStyle = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+    border-radius: 50%;
   }
 `;
 

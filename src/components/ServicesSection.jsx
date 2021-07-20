@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { useScroll } from '../utils/useScroll';
-
 import { scrollReveal } from '../utils/animation';
-
 import { LayoutStyle, DescriptionStyle, ImageStyle } from '../utils/styles';
+
+import coder from '../images/coder.svg';
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -18,7 +18,7 @@ const ServicesSection = () => {
       ref={element}>
       <DescriptionStyle>
         <h2>
-          High <span>quality</span> services
+          High <span>quality</span> skills
         </h2>
         <CardsStyle>
           <CardStyle>
@@ -52,10 +52,7 @@ const ServicesSection = () => {
         </CardsStyle>
       </DescriptionStyle>
       <ImageStyle>
-        <img
-          src='https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-          alt='camera'
-        />
+        <img src={coder} alt='svg-coder-img' />
       </ImageStyle>
     </CustomizeLayoutStyle>
   );
