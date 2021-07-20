@@ -1,0 +1,146 @@
+{
+  "data": {
+    "main": {
+      "name": "Ibrat Nawaz",
+      "occupation": "MERN Stack Developer",
+      "description": "Hire me and let's build some amazing stuff.",
+      "image": "me.png",
+      "contactMessage": "Get in touch with me to receive further details, get coached or anything else.",
+      "email": "nawazmd0096@gmail.com",
+      "phone": "+91 7090 926 032",
+      "address": {
+        "street": "Turkmanpur",
+        "city": "Gorakhpur",
+        "state": "Uttar Pradesh",
+        "country": "India",
+        "zip": "273001"
+      },
+      "website": "",
+      "resumeDownload": "https://drive.google.com/file/d/18Lb7hMMXcUAGenqcZWlZHFeA5oUqGzDg/view?usp=sharing",
+      "social": [
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/ibrat-nawaz-08b677183",
+          "className": "fa fa-linkedin"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/ibratnawaz",
+          "className": "fa fa-github"
+        }
+      ]
+    },
+    "resume": {
+      "skillMessage": "My skills",
+      "educations": [
+        {
+          "school": "Nagarjuna College of Engineering and Technology",
+          "degree": "Bachelor in Computer Science Engineering",
+          "graduated": "July 2020",
+          "description": "Graduated with Distinction - CGPA 8.65/10"
+        }
+      ],
+      "works": [
+        {
+          "company": "Trikara Technologies Private Limited",
+          "title": "Full Stack PHP Developer",
+          "years": "Jun 2020 - Sep 2020",
+          "description": "Building web applications solo."
+        }
+      ],
+      "skills": [
+        {
+          "name": "HTML/CSS",
+          "level": "80%"
+        },
+        {
+          "name": "Javascript",
+          "level": "80%"
+        },
+        {
+          "name": "Bootstrap",
+          "level": "80%"
+        },
+        {
+          "name": "REACT",
+          "level": "70%"
+        },
+        {
+          "name": "Node/Express",
+          "level": "80%"
+        },
+        {
+          "name": "MongoDB",
+          "level": "70%"
+        }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "title": "ProShop",
+          "desc": "This is a shopping app made using MERN and redux, having all the main functionality of an e-commerce website.",
+          "image": "proShop.png",
+          "url": "https://me-proshop.herokuapp.com/",
+          "code": "https://github.com/nawazibrat/shopping-app"
+        },
+        {
+          "title": "M-Drive",
+          "desc": "M-drive app is built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS) and AWS S3. User can create their account and store their files/folder to the AWS S3 bucket.",
+          "image": "m-drive.png",
+          "url": "https://m-drive.netlify.app/",
+          "code": "https://github.com/nawazibrat/M-Drive"
+        },
+        {
+          "title": "My Chat App",
+          "desc": "This is a simple chatting application made using node, react, and socket.io. This app I made it to understand the flow of socket.io",
+          "image": "chat-app.png",
+          "url": "https://nawaz-chat-app.netlify.app/",
+          "code": "https://github.com/nawazibrat/chat-app"
+        },
+        {
+          "title": "URL Shortener",
+          "desc": "It is small application made using HTML/CSS/JS and Node/Express for API. Using this app you can create generate short url for any big url",
+          "image": "url-shortener.png",
+          "url": "https://ui-short-url.netlify.app/index.html",
+          "code": "https://github.com/nawazibrat/Guvi-Zen/tree/master/Day-33-Task"
+        },
+        {
+          "title": "GitHub Finder",
+          "desc": "Search Github users, made using React hooks & context",
+          "image": "github-finder.png",
+          "url": "https://nawaz-github-finder.netlify.app/",
+          "code": "https://github.com/nawazibrat/GitHub-Finder"
+        },
+        {
+          "title": "COVID-19 Tracker",
+          "desc": "Track covid-19 cases across the world and analyse the data with the help of graphs.",
+          "image": "covid.png",
+          "url": "https://all-covid-19-tracker.netlify.app/",
+          "code": "https://github.com/nawazibrat/covid-19-tracker"
+        },
+        {
+          "title": "Gmail Clone",
+          "desc": "Gmail Clone is a Javascript Web application, made using GMAIL API service, where the user can compose or check their emails.",
+          "image": "gmail-clone.png",
+          "url": "https://nawaz-gmail-clone.netlify.app/",
+          "code": "https://github.com/nawazibrat/Gmail-Clone"
+        },
+        {
+          "title": "Recipe Finder",
+          "desc": "Recipe Finder is a Javascript Web application, where the user can look & search for their favourite recipes",
+          "image": "food-search.png",
+          "url": "https://free-food-search.netlify.app/",
+          "code": "https://github.com/nawazibrat/Guvi-Zen/tree/master/Day-16%20Task"
+        },
+        {
+          "title": "Amazon Clone",
+          "desc": "My first react app, Amazon Clone, made it using React and Firebase, to understand the basics of react",
+          "image": "amazon-clone.png",
+          "url": "https://clone-amazon-a0264d.netlify.app/",
+          "code": "https://github.com/nawazibrat/amazon-clone"
+        }
+      ]
+    }
+  }
+}
