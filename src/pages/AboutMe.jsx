@@ -6,6 +6,7 @@ import ServicesSection from '../components/ServicesSection';
 import ScrollTop from '../components/ScrollTop';
 
 import { pageAnimation } from '../utils/animation';
+import { data } from '../utils/data.json';
 
 const AboutMe = () => {
   return (
@@ -14,8 +15,8 @@ const AboutMe = () => {
       initial='hidden'
       animate='show'
       exit='exit'>
-      <AboutSection />
-      <ServicesSection />
+      <AboutSection main={data.main} />
+      <ServicesSection skills={data.resume.skills} />
       <ScrollTop />
     </motion.div>
   );

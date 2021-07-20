@@ -60,40 +60,60 @@
           "description": "My first step towards software engineer, started as an intern in Trikara Technologies. During the period of internship I learnt about Laravel and also contributed to the company product."
         }
       ],
-      "skills": [
-        {
-          "name": "HTML/CSS",
-          "level": "90%"
-        },
-        {
-          "name": "Javascript",
-          "level": "90%"
-        },
-        {
-          "name": "Bootstrap",
-          "level": "90%"
-        },
-        {
-          "name": "REACT",
-          "level": "80%"
-        },
-        {
-          "name": "Node/Express",
-          "level": "70%"
-        },
-        {
-          "name": "Ruby on Rails",
-          "level": "60%"
-        },
-        {
-          "name": "MongoDB",
-          "level": "70%"
-        },
-        {
-          "name": "MySQL",
-          "level": "70%"
-        }
-      ]
+      "skills": {
+        "technical_skills": [
+          {
+            "name": "HTML/CSS",
+            "level": "90"
+          },
+          {
+            "name": "Javascript",
+            "level": "90"
+          },
+          {
+            "name": "Bootstrap",
+            "level": "90"
+          },
+          {
+            "name": "REACT",
+            "level": "80"
+          },
+          {
+            "name": "Node/Express",
+            "level": "70"
+          },
+          {
+            "name": "Ruby on Rails",
+            "level": "60"
+          },
+          {
+            "name": "MongoDB",
+            "level": "70"
+          },
+          {
+            "name": "MySQL",
+            "level": "70"
+          }
+        ],
+        "professional_skills": [
+          {
+            "name": "Communication",
+            "level": "70"
+          },
+          {
+            "name": "Team Work",
+            "level": "70"
+          },
+          {
+            "name": "Eagerness",
+            "level": "70"
+          },
+          {
+            "name": "Mentorship",
+            "level": "70"
+          }
+        ]
+      }
     },
     "projects": [
       {

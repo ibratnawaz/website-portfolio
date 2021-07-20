@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 import { useScroll } from '../utils/useScroll';
 import { scrollReveal } from '../utils/animation';
@@ -7,54 +9,86 @@ import { LayoutStyle, DescriptionStyle, ImageStyle } from '../utils/styles';
 
 import coder from '../images/coder.svg';
 
-const ServicesSection = () => {
+import 'react-circular-progressbar/dist/styles.css';
+
+const ServicesSection = ({ skills }) => {
   const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
 
   return (
-    <CustomizeLayoutStyle
-      variants={scrollReveal}
-      animate={controls}
-      initial='hidden'
-      ref={element}>
+    <CustomizeLayoutStyle>
       <DescriptionStyle>
         <h2>
           High <span>quality</span> skills
         </h2>
         <CardsStyle>
-          <CardStyle>
-            <div className='icon'>
-              <i className='ri-time-line'></i>
-              <h3>Efficient</h3>
+          <motion.div
+            className='tech-skills'
+            variants={scrollReveal}
+            animate={controls}
+            initial='hidden'
+            ref={element}>
+            <h2 style={{ fontSize: 24 }}>Technical Skills</h2>
+            <div className='skills-block'>
+              {skills.technical_skills.map((skill, idx) => (
+                <div className='outer-bar' key={idx}>
+                  <div
+                    className='inner-bar'
+                    style={{ width: `${skill.level}%` }}
+                  />
+                  <div className='skill-details'>
+                    <span>{skill.name}</span>
+                    <small>{skill.level}%</small>
+                  </div>
+                </div>
+              ))}
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
-          <CardStyle>
-            <div className='icon'>
-              <i className='ri-group-line'></i>
-              <h3>Teamwork</h3>
+          </motion.div>
+          <motion.div
+            className='professional-skills'
+            variants={scrollReveal}
+            animate={controls2}
+            initial='hidden'
+            ref={element2}>
+            <h2 style={{ fontSize: 24, marginTop: 48 }}>Professional Skills</h2>
+            <div className='skills-inline'>
+              {skills.professional_skills.map((skill, idx) => (
+                <ProgressBar
+                  percentage={skill.level}
+                  title={skill.name}
+                  key={idx}
+                />
+              ))}
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
-          <CardStyle>
-            <div className='icon'>
-              <i className='ri-camera-lens-line'></i>
-              <h3>Diaphragm</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
-          <CardStyle>
-            <div className='icon'>
-              <i className='ri-money-dollar-circle-line'></i>
-              <h3>Affordable</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
+          </motion.div>
         </CardsStyle>
       </DescriptionStyle>
       <ImageStyle>
         <img src={coder} alt='svg-coder-img' />
       </ImageStyle>
     </CustomizeLayoutStyle>
+  );
+};
+
+const ProgressBar = ({ percentage, title }) => {
+  const styles = {
+    strokeLinecap: 'butt',
+    textSize: '16px',
+    pathColor: `#F9004D`,
+    textColor: '#fff',
+    trailColor: 'black',
+  };
+
+  return (
+    <ProgressBarStyle style={{ width: 150, height: 150 }}>
+      <CircularProgressbar
+        value={percentage}
+        text={`${percentage}%`}
+        strokeWidth={3}
+        styles={buildStyles(styles)}
+      />
+      <h3>{title}</h3>
+    </ProgressBarStyle>
   );
 };
 
@@ -70,23 +104,62 @@ const CustomizeLayoutStyle = styled(LayoutStyle)`
 
 const CardsStyle = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
+  flex-direction: column;
+  .tech-skills,
+  .professional-skills {
+    display: flex;
+    flex-direction: column;
+    .skills-inline {
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 1300px) {
+        justify-content: center;
+      }
+    }
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      .outer-bar {
+        margin: 18px 0px;
+        width: 80%;
+        height: 8px;
+        background-color: black;
+        border-radius: 25px;
+        @media (max-width: 1300px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .inner-bar {
+        height: inherit;
+        background-color: #f9004d;
+        border-radius: inherit;
+      }
+      small {
+        font-size: 10px;
+        float: right;
+      }
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        @media (max-width: 1300px) {
+          float: left;
+        }
+      }
+    }
   }
 `;
 
-const CardStyle = styled.div`
-  flex-basis: 20rem;
-  .icon {
-    display: flex;
-    align-items: center;
-    h3 {
-      margin-left: 1rem;
-      background: white;
-      color: black;
-      padding: 1rem;
-    }
+const ProgressBarStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 12px;
+  h3 {
+    font-size: 18px;
+    margin-top: 12px;
   }
 `;
 
