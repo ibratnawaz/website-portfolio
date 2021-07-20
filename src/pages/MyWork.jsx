@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 import ScrollTop from '../components/ScrollTop';
+import Work from '../components/Work';
 
 import { pageAnimation, slider, sliderContainer } from '../utils/animation';
 
@@ -18,7 +19,7 @@ const MyWork = () => {
         <Frame2 variants={slider}></Frame2>
         <Frame3 variants={slider}></Frame3>
       </motion.div>
-      MyWork
+      <Work />
       <ScrollTop />
     </motion.div>
   );

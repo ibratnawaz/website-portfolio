@@ -75,72 +75,92 @@
         }
       ]
     },
-    "portfolio": {
-      "projects": [
-        {
-          "title": "ProShop",
-          "desc": "This is a shopping app made using MERN and redux, having all the main functionality of an e-commerce website.",
-          "image": "proShop.png",
-          "url": "https://me-proshop.herokuapp.com/",
-          "code": "https://github.com/nawazibrat/shopping-app"
-        },
-        {
-          "title": "M-Drive",
-          "desc": "M-drive app is built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS) and AWS S3. User can create their account and store their files/folder to the AWS S3 bucket.",
-          "image": "m-drive.png",
-          "url": "https://m-drive.netlify.app/",
-          "code": "https://github.com/nawazibrat/M-Drive"
-        },
-        {
-          "title": "My Chat App",
-          "desc": "This is a simple chatting application made using node, react, and socket.io. This app I made it to understand the flow of socket.io",
-          "image": "chat-app.png",
-          "url": "https://nawaz-chat-app.netlify.app/",
-          "code": "https://github.com/nawazibrat/chat-app"
-        },
-        {
-          "title": "URL Shortener",
-          "desc": "It is small application made using HTML/CSS/JS and Node/Express for API. Using this app you can create generate short url for any big url",
-          "image": "url-shortener.png",
-          "url": "https://ui-short-url.netlify.app/index.html",
-          "code": "https://github.com/nawazibrat/Guvi-Zen/tree/master/Day-33-Task"
-        },
-        {
-          "title": "GitHub Finder",
-          "desc": "Search Github users, made using React hooks & context",
-          "image": "github-finder.png",
-          "url": "https://nawaz-github-finder.netlify.app/",
-          "code": "https://github.com/nawazibrat/GitHub-Finder"
-        },
-        {
-          "title": "COVID-19 Tracker",
-          "desc": "Track covid-19 cases across the world and analyse the data with the help of graphs.",
-          "image": "covid.png",
-          "url": "https://all-covid-19-tracker.netlify.app/",
-          "code": "https://github.com/nawazibrat/covid-19-tracker"
-        },
-        {
-          "title": "Gmail Clone",
-          "desc": "Gmail Clone is a Javascript Web application, made using GMAIL API service, where the user can compose or check their emails.",
-          "image": "gmail-clone.png",
-          "url": "https://nawaz-gmail-clone.netlify.app/",
-          "code": "https://github.com/nawazibrat/Gmail-Clone"
-        },
-        {
-          "title": "Recipe Finder",
-          "desc": "Recipe Finder is a Javascript Web application, where the user can look & search for their favourite recipes",
-          "image": "food-search.png",
-          "url": "https://free-food-search.netlify.app/",
-          "code": "https://github.com/nawazibrat/Guvi-Zen/tree/master/Day-16%20Task"
-        },
-        {
-          "title": "Amazon Clone",
-          "desc": "My first react app, Amazon Clone, made it using React and Firebase, to understand the basics of react",
-          "image": "amazon-clone.png",
-          "url": "https://clone-amazon-a0264d.netlify.app/",
-          "code": "https://github.com/nawazibrat/amazon-clone"
-        }
-      ]
-    }
+    "projects": [
+      {
+        "title": "Quizzy",
+        "desc": "This is a full-stack app that I created for self-learning purposes to understand Ruby on Rails. This app uses React as a frontend technology and Ruby on Rails for the backend.",
+        "image": "quizzy.png",
+        "url": "https://bb-quizzy.herokuapp.com/",
+        "code": "https://github.com/ibratnawaz/quizzy"
+      },
+      {
+        "title": "Granite",
+        "desc": "This is a full-stack app that I created for interns in my previous company(BigBinary) to make them understand Ruby on Rails. This app uses React as a frontend technology and Ruby on Rails for the backend.",
+        "image": "granite.png",
+        "url": "https://granite.herokuapp.com/",
+        "code": "https://github.com/ibratnawaz/granite"
+      },
+      {
+        "title": "Polly",
+        "desc": "This is a full-stack app where user can give polls which anyone has created. This app uses React as a frontend technology and Ruby on Rails for the backend",
+        "image": "polly.png",
+        "url": "https://bb-polly.herokuapp.com/",
+        "code": "https://github.com/ibratnawaz/polly"
+      },
+      {
+        "title": "ProShop",
+        "desc": "This is a shopping app made using MERN and redux, having all the main functionality of an e-commerce website.",
+        "image": "proShop.png",
+        "url": "https://me-proshop.herokuapp.com/",
+        "code": "https://github.com/nawazibrat/shopping-app"
+      },
+      {
+        "title": "M-Drive",
+        "desc": "M-drive app is built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS) and AWS S3. User can create their account and store their files/folder to the AWS S3 bucket.",
+        "image": "m-drive.png",
+        "url": "https://m-drive.netlify.app/",
+        "code": "https://github.com/nawazibrat/M-Drive"
+      },
+
+      {
+        "title": "GitHub Finder",
+        "desc": "Search Github users, made using React hooks & context",
+        "image": "github-finder.png",
+        "url": "https://nawaz-github-finder.netlify.app/",
+        "code": "https://github.com/nawazibrat/GitHub-Finder"
+      },
+      {
+        "title": "COVID-19 Tracker",
+        "desc": "Track covid-19 cases across the world and analyse the data with the help of graphs.",
+        "image": "covid.png",
+        "url": "https://all-covid-19-tracker.netlify.app/",
+        "code": "https://github.com/nawazibrat/covid-19-tracker"
+      },
+      {
+        "title": "URL Shortener",
+        "desc": "It is small application made using HTML/CSS/JS and Node/Express for API. Using this app you can generate short url for any big url",
+        "image": "url-shortener.png",
+        "url": "https://ui-short-url.netlify.app/index.html",
+        "code": "https://github.com/nawazibrat/Guvi-Zen/tree/master/Day-33-Task"
+      },
+      {
+        "title": "Gmail Clone",
+        "desc": "Gmail Clone is a Javascript Web application, made using GMAIL API service, where the user can compose or check their emails.",
+        "image": "gmail-clone.png",
+        "url": "https://nawaz-gmail-clone.netlify.app/",
+        "code": "https://github.com/nawazibrat/Gmail-Clone"
+      },
+      {
+        "title": "Recipe Finder",
+        "desc": "Recipe Finder is a Javascript Web application, where the user can look & search for their favourite recipes",
+        "image": "food-search.png",
+        "url": "https://free-food-search.netlify.app/",
+        "code": "https://github.com/nawazibrat/Guvi-Zen/tree/master/Day-16%20Task"
+      },
+      {
+        "title": "Amazon Clone",
+        "desc": "My first react app, Amazon Clone, made it using React and Firebase, to understand the basics of react",
+        "image": "amazon-clone.png",
+        "url": "https://clone-amazon-a0264d.netlify.app/",
+        "code": "https://github.com/nawazibrat/amazon-clone"
+      },
+      {
+        "title": "My Chat App",
+        "desc": "This is a simple chatting application made using node, react, and socket.io. This app I made it to understand the flow of socket.io",
+        "image": "chat-app.png",
+        "url": "https://nawaz-chat-app.netlify.app/",
+        "code": "https://github.com/nawazibrat/chat-app"
+      }
+    ]
   }
 }
