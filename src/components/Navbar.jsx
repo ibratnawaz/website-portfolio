@@ -32,7 +32,17 @@ const Navbar = () => {
           />
         </li>
         <li>
-          <Link to='/contact'>3. Contact Me</Link>
+          <Link to='/experience'>3. My Experiences</Link>
+          <Line
+            transition={{ duration: 0.75 }}
+            initial={{ width: '0%' }}
+            animate={{
+              width: pathname === '/experience' ? '50%' : '0%',
+            }}
+          />
+        </li>
+        <li>
+          <Link to='/contact'>4. Contact Me</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}

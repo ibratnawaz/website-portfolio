@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
+import MyExp from './pages/MyExp';
 import Navbar from './components/Navbar';
 
 import GlobalStyle from './components/GlobalStyle';
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/' component={AboutMe} />
           <Route exact path='/work' component={MyWork} />
           <Route exact path='/contact' component={ContactMe} />
+          <Route exact path='/experience' component={MyExp} />
         </Switch>
       </AnimatePresence>
     </div>
