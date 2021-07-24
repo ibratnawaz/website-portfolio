@@ -66,7 +66,7 @@ const MyExp = () => {
           contentArrowStyle={{ borderRight: '7px solid  #fff' }}
           date='June, 2019 - Aug, 2019'
           iconStyle={{ background: '#000', color: '#fff' }}
-          icon={<i class='ri-briefcase-fill'></i>}>
+          icon={<i className='ri-briefcase-fill'></i>}>
           <h3 className='vertical-timeline-element-title title-dark'>
             Junior Software Engineer Trainee
           </h3>
