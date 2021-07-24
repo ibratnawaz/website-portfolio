@@ -7,6 +7,7 @@ import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
 import MyExp from './pages/MyExp';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import GlobalStyle from './components/GlobalStyle';
 import 'remixicon/fonts/remixicon.css';
@@ -26,6 +27,7 @@ function App() {
           <Route exact path='/experience' component={MyExp} />
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

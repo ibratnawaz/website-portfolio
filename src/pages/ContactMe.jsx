@@ -178,13 +178,17 @@ const ContactStyle = styled.div`
 
     button {
       margin-top: 24px;
-      padding: 0.5rem !important;
+      padding: 0.8rem !important;
       display: flex;
       justify-content: center;
       align-items: center;
+      .ri-send-plane-fill {
+        font-size: 14px;
+        color: white;
+      }
       &:hover {
         .ri-send-plane-fill {
-          color: white;
+          color: black;
         }
       }
     }
@@ -205,8 +209,8 @@ const ContactStyle = styled.div`
       outline: none;
       border: 1px solid #dddddd;
       &:focus {
-        box-shadow: 0 0 5px #f9004d;
-        border: 1px solid #f9004d;
+        box-shadow: 0 0 5px cyan;
+        border: 1px solid cyan;
       }
     }
   }
@@ -288,7 +292,7 @@ const ContactStyle = styled.div`
   }
 
   .social-media-list li:hover {
-    background-color: #f9004d;
+    background-color: cyan;
     i {
       color: #fff;
     }

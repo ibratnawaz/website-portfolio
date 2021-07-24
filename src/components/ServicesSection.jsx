@@ -74,7 +74,7 @@ const ProgressBar = ({ percentage, title }) => {
   const styles = {
     strokeLinecap: 'butt',
     textSize: '16px',
-    pathColor: `#F9004D`,
+    pathColor: `cyan`,
     textColor: '#fff',
     trailColor: 'black',
   };
@@ -132,7 +132,7 @@ const CardsStyle = styled.div`
       }
       .inner-bar {
         height: inherit;
-        background-color: #f9004d;
+        background-color: cyan;
         border-radius: inherit;
       }
       small {

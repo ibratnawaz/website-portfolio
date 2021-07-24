@@ -17,7 +17,7 @@ html{
         border-radius: 10px;
     }
         ::-webkit-scrollbar-thumb {
-        background: #F9004D;
+        background: cyan;
         border-radius: 10px;
     }
         ::-webkit-scrollbar-thumb:hover {
@@ -43,16 +43,16 @@ button{
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #F9004D;  //#950840
+    border: 3px solid cyan;//#F9004D;
     background: transparent;
     color: white;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to left, #000 50%, #F9004D 50%) right;
+    background: linear-gradient(to left, #000 50%, cyan 50%) right;
     background-size: 200%;
     transition: all .5s ease-out;
     &:hover{
-        background-color: #F9004D;
-        color: white;
+        background-color: cyan;
+        color: black;
         background-position: left;
     }
 }
@@ -75,7 +75,7 @@ a{
 }
 span{
     font-weight: bold;
-    color:#F9004D;
+    color:cyan;
 }
 
 p{

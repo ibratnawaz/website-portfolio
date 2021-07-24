@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
-import logo from '../images/logo2.png';
+import logo from '../images/logo.png';
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -77,7 +77,7 @@ const NavbarStyle = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #282828;
+  background: #1a1a1a; //#282828;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -189,7 +189,7 @@ const NavbarStyle = styled.nav`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #f9004d;
+  background: cyan;
   width: 0%;
   position: absolute;
   bottom: -80%;
