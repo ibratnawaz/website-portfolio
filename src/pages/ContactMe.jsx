@@ -110,7 +110,7 @@ const ContactMe = () => {
               </li>
               <li>
                 <a
-                  href='https://www.linkedin.com/in/ibrat-nawaz-08b677183/'
+                  href='https://www.linkedin.com/in/ibrat-nawaz/'
                   target='_blank'
                   className='contact-icon'
                   rel='noreferrer'>
